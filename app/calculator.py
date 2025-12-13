@@ -2,6 +2,9 @@
 def add(a:int, b:int)->int:
     return a+b
 
+def is_even(number: int) -> bool:
+    return number % 2 == 0
+
 def divide(a: int, b: int) -> float:
     if b == 0:
         raise ValueError("Division by zero is not allowed")
