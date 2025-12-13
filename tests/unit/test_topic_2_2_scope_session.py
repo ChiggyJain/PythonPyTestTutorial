@@ -3,6 +3,7 @@ import pytest
 
 # scope=session means shared generated fixture for all tets-file including all defined test-function-cases
 # Fixture created once for entire test run
+# global-level sharing
 @pytest.fixture(scope="session")
 def app_config():
     return {
