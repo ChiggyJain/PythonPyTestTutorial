@@ -103,18 +103,6 @@ Verbose mode (default via pytest.ini):
 pytest -v
 ```
 
----
-
-## 🚀 Why This Repo Is Valuable (Recruiter View)
-
-This project shows:
-- Strong understanding of **testing as part of backend system design**
-- Correct handling of **async code and FastAPI**
-- Ability to isolate databases, external APIs, and background jobs
-- Deterministic, CI-friendly test suites
-- Production-level PyTest practices used in real companies
-
----
 
 ## 🧩 Tech Stack
 
