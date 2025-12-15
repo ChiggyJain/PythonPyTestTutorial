@@ -22,6 +22,7 @@ async def read_current_user(user: dict = Depends(get_current_user)):
 
 @app.post("/notify")
 async def notify_user(email: str, background_tasks: BackgroundTasks):
+    # here endpoint is registered background-tasks
     # added task in background and it will be run immediately after fastapi returning the response only into the same python process
     background_tasks.add_task(
         send_email,
