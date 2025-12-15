@@ -1,4 +1,5 @@
-from fastapi import FastAPI
+from fastapi import FastAPI, Depends
+from app.dependencies import get_current_user
 
 app = FastAPI()
 
@@ -10,3 +11,8 @@ async def health_check():
 @app.get("/add")
 async def add(a: int, b: int):
     return {"result": a + b}
+
+
+@app.get("/me")
+async def read_current_user(user: dict = Depends(get_current_user)):
+    return user
