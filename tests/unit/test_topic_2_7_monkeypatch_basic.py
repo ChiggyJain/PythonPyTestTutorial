@@ -5,6 +5,7 @@ from app.currency import convert_usd_to_inr
 def test_currency_conversion_with_mock(monkeypatch):
     def mock_fetch_rate():
         return 80.0
+    # here app.currency statement is used because this func: fetch_exchange_rate is direct import concept
     monkeypatch.setattr(
         "app.currency.fetch_exchange_rate",
         mock_fetch_rate
